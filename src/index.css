@@ -80,7 +80,6 @@
     @apply bg-black text-foreground antialiased relative h-full min-h-screen;
     font-feature-settings: "rlig" 1, "calt" 1;
     overflow-x: hidden;
-    perspective: 1000px;
   }
 
   .dark-mode {
@@ -708,6 +707,7 @@
 }
 
 section {
+  perspective: 1000px;
   transform-style: preserve-3d;
   will-change: transform;
 }
