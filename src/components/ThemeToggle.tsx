@@ -30,7 +30,7 @@ const ThemeToggle: React.FC = () => {
           initial={{ rotate: 0 }}
           animate={{ rotate: isDark ? 0 : 180 }}
           transition={{ duration: 0.5, type: "spring" }}
-          className={isDark ? "text-white" : "text-white"}
+          className={isDark ? "text-white" : "text-gray-800"}
         >
           {isDark ? <Sun size={20} /> : <Moon size={20} />}
         </motion.div>

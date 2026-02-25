@@ -1,10 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X, User, Briefcase, Code2, Award, Mail, Home } from 'lucide-react';
+import { useTheme } from '@/contexts/ThemeContext';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +56,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-white p-2 focus:outline-none"
+          className={`md:hidden p-2 focus:outline-none ${isDark ? 'text-white' : 'text-gray-800'}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

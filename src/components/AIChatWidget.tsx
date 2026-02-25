@@ -90,48 +90,27 @@ const AIChatWidget: React.FC = () => {
     setInput('');
     setIsLoading(true);
 
-    const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
-    if (!apiKey || apiKey === 'sk-your-api-key-here') {
-      setMessages([
-        ...updatedMessages,
-        {
-          role: 'assistant',
-          content:
-            'The AI assistant is not configured yet. Please add a valid OpenAI API key to the .env file.',
-        },
-      ]);
-      setIsLoading(false);
-      return;
-    }
-
     try {
       const systemMessage: ChatMessage = {
         role: 'system',
         content: buildSystemPrompt(),
       };
 
-      const response = await fetch(
-        'https://api.openai.com/v1/chat/completions',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${apiKey}`,
-          },
-          body: JSON.stringify({
-            model: 'gpt-4o-mini',
-            messages: [
-              systemMessage,
-              ...updatedMessages.map((m) => ({
-                role: m.role,
-                content: m.content,
-              })),
-            ],
-            max_tokens: 500,
-            temperature: 0.7,
-          }),
-        }
-      );
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          messages: [
+            systemMessage,
+            ...updatedMessages.map((m) => ({
+              role: m.role,
+              content: m.content,
+            })),
+          ],
+        }),
+      });
 
       if (!response.ok) {
         throw new Error(`API error: ${response.status}`);

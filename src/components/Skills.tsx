@@ -3,12 +3,15 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { Code2, Palette, Database, Cloud, Terminal, Cpu, Layers, Zap, Monitor, Server, Globe, Shield, Settings, GitBranch } from 'lucide-react';
 import { skillCategories, technicalProficiency, SkillCategory } from '@/data/skills';
+import { useTheme } from '@/contexts/ThemeContext';
 import BackgroundEffects from './BackgroundEffects';
 
 const Skills: React.FC = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   const animations = useAnimation();
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
 
   useEffect(() => {
     if (isInView) {
@@ -122,7 +125,7 @@ const Skills: React.FC = () => {
                   </div>
                   <div className="w-full h-2 sm:h-3 bg-white/10 backdrop-blur-sm overflow-hidden">
                     <motion.div 
-                      className="h-full bg-gradient-to-r from-gray-500 to-gray-400 shadow-lg"
+                      className={`h-full shadow-lg ${isDark ? 'bg-gradient-to-r from-gray-500 to-gray-400' : 'bg-gradient-to-r from-blue-500 to-blue-400'}`}
                       initial={{ width: 0 }}
                       animate={{ width: `${skill.percentage}%` }}
                       transition={{ duration: 0.8, delay: 0.1 * index }}
