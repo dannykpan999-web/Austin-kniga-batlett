@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             <motion.div variants={itemVariants} className="md:col-span-1 text-center md:text-left">
               <h3 className={`text-2xl font-display font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-800'}`}>Austin Bartlett</h3>
               <p className={`font-body leading-relaxed mb-6 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Senior Full Stack Developer specializing in modern web technologies, AI/ML, and innovative solutions.
+                Senior Full-Stack Engineer building scalable, high-performance web and mobile apps, focused on clean architecture and maintainability.
               </p>
               <div className={`flex items-center justify-center md:justify-start gap-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
                 <MapPin size={16} />

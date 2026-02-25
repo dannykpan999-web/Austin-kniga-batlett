@@ -18,8 +18,7 @@ export const projectsData: Project[] = [
       "Deployed containerized modules for all core services with zero-downtime blue-green deployments via GitHub Actions and AWS.",
       "Implemented a dual-path KYC flow with document scanning, liveness detection, and 2FA using Alpaca APIs.",
       "Integrated Plaid for instant ACH transfers and Stripe for automated subscription billing (freemium → paid).",
-      "Used Next.js SSR and WebSockets to achieve sub-200ms live updates and under 1s page loads.",
-      "Leveraged Elastic for log aggregation and PostHog for real-time analytics and anomaly tracking."
+      "Used Next.js SSR and WebSockets to achieve sub-200ms live updates and under 1s page loads."
     ],
     tags: ["React", "Node.js", "REST API", "PostgreSQL", "Docker", "Elastic", "Framer"],
     image: "/img/11.jpg",
@@ -130,19 +129,6 @@ export const projectsData: Project[] = [
     ],
     tags: ["React", "Python", "TensorFlow", "Node.js", "PostgreSQL"],
     image: "/img/07.png",
-    featured: true
-  },
-  {
-    id: 8,
-    title: "Lumin – Online Banking & Finance SaaS Platform",
-    description: [
-      "Developed a full-featured online banking dashboard with real-time transaction monitoring and budget analytics.",
-      "Implemented secure payment processing, multi-currency support, and automated fraud detection using ML algorithms.",
-      "Reduced fraudulent transactions by 75% through intelligent anomaly detection",
-      "Increased user financial literacy by 40% with interactive spending insights"
-    ],
-    tags: ["Next.js", "TypeScript", ".NET", "SQL Server", "Azure"],
-    image: "/img/08.png",
     featured: true
   },
   {

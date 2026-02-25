@@ -142,37 +142,14 @@ const About: React.FC<AboutProps> = () => {
               {/* Professional Summary Card */}
               <motion.div variants={itemVariants} className="lg:col-span-2">
                 <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 sm:p-8 h-full shadow-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300">
-                  <h4 className="text-xl font-display font-bold text-white mb-6 pb-4 border-b border-gray-700/50">Who am I</h4>
-                  
+                  <h4 className="text-xl font-display font-bold text-white mb-6">Who am I</h4>
+
                   <div className="space-y-6">
                     {personalInfo.bio.long.map((paragraph, index) => (
                       <p key={index} className="text-sm sm:text-base leading-relaxed text-white/85 font-body">
                         {paragraph}
                       </p>
                     ))}
-                  </div>
-
-                  {/* Professional Highlights */}
-                  <div className="mt-8 pt-6 border-t border-gray-700/50">
-                    <h5 className="text-lg font-display font-semibold text-white mb-4">Key Highlights</h5>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                        <span className="text-sm text-white/80 font-body">7+ Years Experience</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                        <span className="text-sm text-white/80 font-body">Full Stack Development</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                        <span className="text-sm text-white/80 font-body">Cross-functional Teams</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                        <span className="text-sm text-white/80 font-body">User-centric Design</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </motion.div>

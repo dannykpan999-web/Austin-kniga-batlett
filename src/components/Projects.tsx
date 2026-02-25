@@ -90,13 +90,6 @@ const Projects: React.FC = () => {
                         alt={project.title} 
                         className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-300"
                       />
-                      {project.featured && (
-                      <div className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-2 flex items-center gap-1 sm:gap-2 shadow-lg bg-blue-600 border border-blue-400">
-                        <Star size={14} className="sm:w-4 sm:h-4" />
-                        <span className="font-medium">Featured</span>
-                      </div>
-                      )}
-                      <div className="absolute bottom-0 left-0 w-full h-1/3 bg-black/60"></div>
                     </div>
                     
                     {/* Content Section */}

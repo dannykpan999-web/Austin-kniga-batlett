@@ -127,12 +127,6 @@ const Hero: React.FC = () => {
             </h2>
           </motion.div>
           
-          <motion.p 
-            className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/85 mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto leading-relaxed font-body font-light px-4 sm:px-0"
-            variants={itemVariants}
-          >
-            {personalInfo.bio.short}
-          </motion.p>
           
           <motion.div 
             className="flex justify-center gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-14 md:mb-16"
