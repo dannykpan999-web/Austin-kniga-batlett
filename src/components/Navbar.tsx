@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           className="font-bold text-xl cursor-pointer" 
           onClick={() => scrollToSection('hero')}
         >
-          <span className="text-blue-400 font-display">Haruka Leonhart</span>
+          <span className="text-blue-400 font-display">Austin Bartlett</span>
         </div>
 
         {/* Desktop Navigation */}

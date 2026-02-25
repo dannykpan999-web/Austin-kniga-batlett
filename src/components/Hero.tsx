@@ -146,38 +146,25 @@ const Hero: React.FC = () => {
             >
               <Mail size={24} className="sm:w-7 sm:h-7 text-white hover:text-blue-400 transition-colors" />
             </motion.a>
-            <motion.a 
-              href={personalInfo.contact.github} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="p-3 sm:p-4 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-white/30"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Github size={24} className="sm:w-7 sm:h-7 text-white hover:text-blue-400 transition-colors" />
-            </motion.a>
-            <motion.a 
-              href="/resume/resume.pdf" 
+            <motion.a
+              href={personalInfo.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 sm:p-4 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-white/30"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
+              <Linkedin size={24} className="sm:w-7 sm:h-7 text-white hover:text-blue-400 transition-colors" />
+            </motion.a>
+            <motion.a
+              href="/resume/resume.pdf"
+              download="Austin-Bartlett-Resume.pdf"
+              className="p-3 sm:p-4 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-white/30"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
               <FileText size={24} className="sm:w-7 sm:h-7 text-white hover:text-blue-400 transition-colors" />
             </motion.a>
-            {/* <motion.a 
-              href="https://linkedin.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className={`p-3 rounded-full transition-all duration-300 transform hover:-translate-y-1 ${
-                isDark ? 'glass' : 'bg-white/80 shadow-md border border-blue-200/50'
-              }`}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Linkedin size={24} className="text-white hover:text-blue-400 transition-colors" />
-            </motion.a> */}
           </motion.div>
           
           <motion.button 

@@ -46,9 +46,9 @@ const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Brand section */}
             <motion.div variants={itemVariants} className="md:col-span-1 text-center md:text-left">
-              <h3 className="text-2xl font-display font-bold text-white mb-4">Haruka Leonhart</h3>
+              <h3 className="text-2xl font-display font-bold text-white mb-4">Austin Bartlett</h3>
               <p className="text-gray-400 font-body leading-relaxed mb-6">
-                Senior Full Stack Developer specializing in modern web technologies and innovative solutions.
+                Senior Full Stack Developer specializing in modern web technologies, AI/ML, and innovative solutions.
               </p>
               <div className="flex items-center justify-center md:justify-start gap-2 text-gray-400">
                 <MapPin size={16} />
@@ -84,23 +84,22 @@ const Footer: React.FC = () => {
                   <Mail size={16} />
                   <span className="font-body text-sm">{personalInfo.contact.email}</span>
                 </a>
-                <a 
-                  href={personalInfo.contact.github}
+                <a
+                  href={personalInfo.contact.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center md:justify-start gap-3 text-gray-400 hover:text-white transition-colors duration-300"
                 >
-                  <Github size={16} />
-                  <span className="font-body text-sm">GitHub</span>
+                  <Linkedin size={16} />
+                  <span className="font-body text-sm">LinkedIn</span>
                 </a>
-                <a 
+                <a
                   href="/resume/resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  download="Austin-Bartlett-Resume.pdf"
                   className="flex items-center justify-center md:justify-start gap-3 text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   <FileText size={16} />
-                  <span className="font-body text-sm">Resume</span>
+                  <span className="font-body text-sm">Download Resume</span>
                 </a>
               </div>
             </motion.div>
@@ -113,7 +112,7 @@ const Footer: React.FC = () => {
           >
             <div className="flex flex-col md:flex-row justify-center items-center gap-4">
               <p className="text-gray-500 font-body text-sm">
-                © {currentYear} Haruka Leonhart. All rights reserved.
+                © {currentYear} Austin Bartlett. All rights reserved.
               </p>
             </div>
           </motion.div>

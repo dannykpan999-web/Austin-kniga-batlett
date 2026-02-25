@@ -150,20 +150,20 @@ const Contact: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-white mb-4 sm:mb-6">Connect With Me</h3>
                 
                 <div className="space-y-3 sm:space-y-4">
-                  <a href={personalInfo.contact.github} target="_blank" rel="noopener noreferrer" 
+                  <a href={personalInfo.contact.linkedin} target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 hover:border-white/30 transition-all duration-300 hover:-translate-y-1">
                     <div className="p-1.5 sm:p-2 bg-white/15">
-                      <Github size={20} className="text-white sm:w-6 sm:h-6" />
+                      <Linkedin size={20} className="text-white sm:w-6 sm:h-6" />
                     </div>
-                    <span className="text-white text-sm sm:text-base md:text-lg font-body font-medium">GitHub</span>
+                    <span className="text-white text-sm sm:text-base md:text-lg font-body font-medium">LinkedIn</span>
                   </a>
-                  
-                  <a href="/resume/resume.pdf" target="_blank" rel="noopener noreferrer"
+
+                  <a href="/resume/resume.pdf" download="Austin-Bartlett-Resume.pdf"
                     className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 hover:border-white/30 transition-all duration-300 hover:-translate-y-1">
                     <div className="p-1.5 sm:p-2 bg-white/15">
                       <FileText size={20} className="text-white sm:w-6 sm:h-6" />
                     </div>
-                    <span className="text-white text-sm sm:text-base md:text-lg font-body font-medium">View Resume</span>
+                    <span className="text-white text-sm sm:text-base md:text-lg font-body font-medium">Download Resume</span>
                   </a>
                 </div>
                 

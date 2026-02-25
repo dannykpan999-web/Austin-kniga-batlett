@@ -126,13 +126,12 @@ const About: React.FC<AboutProps> = () => {
                       </div>
                       <div className="flex-1">
                         <h5 className="text-base font-body font-semibold text-white mb-1">Resume</h5>
-                        <a 
-                          href="/resume/resume.pdf" 
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <a
+                          href="/resume/resume.pdf"
+                          download="Austin-Bartlett-Resume.pdf"
                           className="text-white/80 hover:text-white transition-colors text-sm underline hover:no-underline font-body"
                         >
-                          View PDF Resume
+                          Download PDF Resume
                         </a>
                       </div>
                     </div>
@@ -159,7 +158,7 @@ const About: React.FC<AboutProps> = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                        <span className="text-sm text-white/80 font-body">6+ Years Experience</span>
+                        <span className="text-sm text-white/80 font-body">7+ Years Experience</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-blue-400 rounded-full"></div>

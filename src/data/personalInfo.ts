@@ -10,6 +10,7 @@ export interface PersonalInfo {
   };
   contact: {
     email: string;
+    phone: string;
     location: string;
     github: string;
     linkedin?: string;
@@ -27,31 +28,32 @@ export interface PersonalInfo {
 
 export const personalInfo: PersonalInfo = {
   name: {
-    first: "Haruka",
-    last: "Leonhart"
+    first: "Austin",
+    last: "Bartlett"
   },
-  title: "Full Stack Developer",
+  title: "Senior Full Stack Developer",
   bio: {
-    short: "Building innovative web solutions with modern technologies to deliver exceptional user experiences.",
+    short: "Senior Full-Stack Software Engineer with 7+ years of experience building high-performance web applications.",
     long: [
-      "A versatile Full Stack Developer with 6+ years of experience in developing innovative, scalable web solutions. My expertise spans both frontend and backend technologies.",
-      "I focus on creating seamless integration and exceptional user experiences through thoughtful design and robust implementation.",
-      "With a proven ability to collaborate with cross-functional teams, I deliver impactful and user-centric products that meet business objectives while delighting users."
+      "Senior Full-Stack Software Engineer with 7+ years of experience building high-performance web applications. Expert in React, TypeScript, Next.js, Remix, and modern frontend architectures, with strong backend knowledge in Node.js and Python.",
+      "Skilled in AI/ML applications, state management, performance optimization, testing strategies, cloud deployments, and data visualization.",
+      "Passionate about delivering scalable, maintainable, and accessible software solutions that make a real impact for users and businesses alike."
     ]
   },
   contact: {
-    email: "harukaleonhart@gmail.com",
-    location: "Tokyo, Japan",
-    github: "https://github.com/darkmage108",
-    linkedin: undefined // Set to undefined if not available, or provide URL if you have one
+    email: "austinkbartlettwork@gmail.com",
+    phone: "(248) 925-2139",
+    location: "Royal Oak, Michigan 48067",
+    github: "",
+    linkedin: "https://linkedin.com/in/austin-bartlett-in/"
   },
   education: {
-    degree: "Bachelor's in Computer Science",
-    institution: "University of Tokyo",
-    year: "2022"
+    degree: "Bachelor of Science in Computer Science",
+    institution: "Oakland University",
+    year: "2023 – 2025"
   },
   avatar: {
     image: "img/avatar.png",
-    fallback: "HL"
+    fallback: "AB"
   }
 };
