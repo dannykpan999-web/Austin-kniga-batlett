@@ -20,10 +20,6 @@ export interface PersonalInfo {
     institution: string;
     year: string;
   };
-  avatar: {
-    image: string;
-    fallback: string;
-  };
 }
 
 export const personalInfo: PersonalInfo = {
@@ -52,8 +48,4 @@ export const personalInfo: PersonalInfo = {
     institution: "Oakland University",
     year: "2023 – 2025"
   },
-  avatar: {
-    image: "img/avatar.png",
-    fallback: "AB"
-  }
 };
