@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.05 });
   const animations = useAnimation();
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
       {/* Subtle background pattern */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gray-800/20"></div>
       
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           ref={ref}
           initial="hidden"
